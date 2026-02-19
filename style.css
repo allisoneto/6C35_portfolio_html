@@ -1,5 +1,6 @@
 :root {
  --color-accent: oklch(0.65 0.111 204);
+ --color-accent-deep: oklch(from var(--color-accent) 30% 50% h);
  --color-accent-dark: oklch(from var(--color-accent) 50% 50% h);
  --color-accent-light: oklch(from var(--color-accent) 95% 5% h);
  --color-grey: oklch(80% 3% 200);
@@ -105,16 +106,19 @@ h1 {
   font-size: 400%;
   line-height: 1.1;
   text-wrap: balance;
+  color: var(--color-accent-deep);
 }
 
 h2 {
   line-height: 1.1;
   text-wrap: balance;
+  color: var(--color-accent-deep);
 }
 
 h3 {
   line-height: 1.1;
   text-wrap: balance;
+  color: var(--color-accent-dark);
 }
 
 h4 {
@@ -148,17 +152,17 @@ h6 {
   text-align: center;
   padding: 0.5em;
   margin-bottom: 1.5em;
-  border-bottom: 3px solid var(--color-accent-dark);
+  border-bottom: 3px solid var(--color-accent-deep);
   padding-bottom: 1.5em;
   padding-top: 1.5em;
-  border-top: 3px solid var(--color-accent-dark);
+  border-top: 3px solid var(--color-accent-deep);
 }
 
 .resume-section {
   margin-block: 2em;
   margin-top: -2em;
   padding-block: 1em;
-  border-bottom: 3px solid var(--color-accent-dark);
+  border-bottom: 3px solid var(--color-accent-deep);
 }
 
 .resume-entry {
@@ -171,7 +175,8 @@ h6 {
   margin-top: 1em;
   text-align: end;
   font-size: 0.9em;
-  color: oklch(from var(--color-grey) 60% 2% h);
+  color: var(--color-accent);
+  /* color: oklch(from var(--color-grey) 60% 2% h); */
 }
 
 .resume-entry--no-meta {
