@@ -19,16 +19,16 @@
 }
 
 body {
-	/* Set line height to 1.5 times the font size
-		and use the OS’s UI font as the website font
-		*/
-	font: 100%/1.5 system-ui;
-	max-width: 100ch;
-	margin-inline: auto;
-	padding: 5ch;
-	accent-color: var(--color-accent);
-	}
-	
+/* Set line height to 1.5 times the font size
+	and use the OS’s UI font as the website font
+	*/
+font: 100%/1.5 system-ui;
+max-width: 100ch;
+margin-inline: auto;
+padding: 5ch;
+accent-color: var(--color-accent);
+}
+
 nav ul,
 nav li {
 display: contents;
@@ -66,6 +66,7 @@ nav a:hover {
 	padding-bottom: 0.1em;
 	margin-bottom: -2px;
 }
+
 
 html {
 	font: 100%/1.5 system-ui;
@@ -156,6 +157,11 @@ figure {
 	text-align: center;
 	background: white;
 
+	img {
+		/* width: 100%; */
+		max-height: 75vh;
+	}
+
 	> figcaption {
 		font: 500 75% var(--font-sans);
 		background: var(--color-neutral-95);
@@ -176,8 +182,5 @@ figure {
 			text-decoration: underline;
 			text-decoration-color: color-mix(in lab, currentColor, transparent 70%);
 		}
-	}
-	> img {
-		max-width: 100%;
 	}
 }
